@@ -23,9 +23,7 @@ for vlans2 in command2:
     vlans2 = set(command2[-1].split(','))
 
 commonlistVlan = list(vlans1 & vlans2)
-#vlan = [int(vlan) for vlan in commonlistVlan if vlan.isdigit()]
-for vlan in commonlistVlan:
-    if vlan.isdigit() in commonlistVlan:
-            break
+vlan = [int(vlan) for vlan in commonlistVlan if vlan.isdigit()]
+
 vlan.sort()
 print(vlan)

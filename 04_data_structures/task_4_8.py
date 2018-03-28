@@ -19,3 +19,19 @@
 '''
 
 IP = '192.168.3.1'
+
+IP = (IP.split('.'))
+ip = [int(ip) for ip in IP if ip.isdigit()]
+
+
+print("{:<8}  {:<8}  {:<8}  {:<8}".format(ip[0], ip[1], ip[2], ip[3]))
+#print("{:<10} {:<10} {:<10} {:<10}".format(ip[0], ip[1], ip[2], ip[3]))
+
+ip1, ip2, ip3, ip4 = ip
+
+print("{:<08b}  {:<08b}  {:<08b}  {:<08b}".format(ip1, ip2, ip3, ip4))
+
+print('''
+10        1         1         1
+00001010  00000001  00000001  00000001
+''')
